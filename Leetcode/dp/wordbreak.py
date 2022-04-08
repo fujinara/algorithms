@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/word-break/
+
 def wordBreak(s, wordDict):
     n = len(s)
     dp = [False for _ in range(n + 1)]

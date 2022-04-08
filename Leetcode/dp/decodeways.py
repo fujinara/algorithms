@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/decode-ways/
+
 def numDecodings(s: str) -> int:
     n = len(s)
     dp = [0 for _ in range(n + 1)]

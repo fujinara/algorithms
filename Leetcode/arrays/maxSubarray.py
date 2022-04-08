@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/maximum-subarray/
+
 def maxSubArray(nums):
     cur = best = nums[0]
     for elem in nums[1:]:

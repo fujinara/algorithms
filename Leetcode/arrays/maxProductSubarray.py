@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/maximum-product-subarray/
+
 def maxProduct(nums):
     best = nums[0]
     # curMax/curMmin stores the max/min product of

@@ -1,3 +1,5 @@
+# determine if node "a" is an ancestor of node "b" in a tree
+
 n = int(input())
 arr = list(map(int, input().split()))
 

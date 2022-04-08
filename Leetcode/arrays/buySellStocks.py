@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+
 def maxProfit(prices):
     best = 0
     buy = prices[0]
