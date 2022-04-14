@@ -9,14 +9,14 @@ def simpleDFS(g, v):
 # dfs with color and timer
 # color could be 0 (white), 1 (grey) or 2 (black)
 def dfs(g, v):
-    timeIn = dfsTimer
+    timeIn[v] = dfsTimer
     dfsTimer += 1
     color[v] = 1
     for i in g[v]:
         if color[i] == 0:
             dfs(g, i)
     color[v] = 2
-    timeOut = dfsTimer
+    timeOut[v] = dfsTimer
     dfsTimer += 1
 
 # iterative dfs (without recursion)
