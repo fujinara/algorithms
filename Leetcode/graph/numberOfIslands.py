@@ -7,6 +7,7 @@ def numIslands(grid):
     rows, cols = len(grid), len(grid[0])
     visited = set()
     islands = 0
+    ways = [[1, 0], [0, 1], [-1, 0], [0, -1]]
 
     def bfs(r, c):
         q = deque()
@@ -15,7 +16,6 @@ def numIslands(grid):
 
         while q:
             row, col = q.popleft()
-            ways = [[1, 0], [0, 1], [-1, 0], [0, -1]]
             for wr, wc in ways:
                 r, c = row + wr, col + wc
                 if ((r) in range(rows) and 
