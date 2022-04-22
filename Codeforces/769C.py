@@ -4,7 +4,7 @@ n, m, k = map(int, input().split())
 if k % 2 != 0:
     print("IMPOSSIBLE")
     exit()
-grid = [[] for _ in range(n)]
+grid = ['' for _ in range(n)]
 sr, sc = -1, -1 # starting row and column
 for r in range(n):
     grid[r] = input()
