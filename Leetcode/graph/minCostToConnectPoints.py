@@ -1,11 +1,11 @@
 # https://leetcode.com/problems/min-cost-to-connect-all-points/
 
 def minCostConnectPoints(points):
-    N = len(points)
-    adj = {i : [] for i in range(N)} # i : list of [cost, node]
-    for i in range(N):
+    n = len(points)
+    adj = {i : [] for i in range(n)} # i : list of [cost, node]
+    for i in range(n):
         x1, y1 = points[i]
-        for j in range(i + 1, N):
+        for j in range(i + 1, n):
             x2, y2 = points[j]
             dist = abs(x1 - x2) + abs(y1 - y2)
             adj[i].append([dist, j])
@@ -15,7 +15,7 @@ def minCostConnectPoints(points):
     res = 0
     visit = set()
     minH = [[0, 0]] # [cost, point]
-    while len(visit) < N:
+    while len(visit) < n:
         cost, i = heapq.heappop(minH)
         if i in visit:
             continue
