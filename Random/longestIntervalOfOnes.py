@@ -66,5 +66,5 @@ def func(arr):
 #     return ans
 
 nums = [1, 1, 1, 0, 0, 1]
-print(solve(nums))
+print(func(nums))
     
